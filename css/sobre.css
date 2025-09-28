@@ -1,0 +1,60 @@
+/* css/sobre.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background: #faf6f1;
+  color: #3f3f3f;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-weight: bold;
+  color: #4a6040;
+  font-size: 1.2rem;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #4a6040;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #c4ebb1;
+}
+
+.sobre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 90vh;
+  align-items: center;
+  padding: 3rem;
+  gap: 2rem;
+}
+
+.sobre img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.texto h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #4a6040;
+}

@@ -1,0 +1,80 @@
+/* css/processo.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f0f5f2;
+  margin: 0;
+}
+
+.navbar { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 1rem 2rem; 
+  background-color: #ffffff; 
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05); 
+} 
+
+.logo { 
+  font-weight: bold; 
+  color: #4a6040; 
+  font-size: 1.2rem; 
+} 
+
+.navbar ul { 
+  display: flex; 
+  list-style: none; 
+  gap: 1.5rem; 
+} 
+
+.navbar a { 
+  text-decoration: none; 
+  color: #4a6040; 
+  font-weight: 500; 
+  transition: color 0.3s; 
+} 
+
+.navbar a:hover { 
+  color: #c4ebb1; 
+}
+
+.timeline {
+  padding: 3rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+.timeline h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #4a6040;
+}
+
+.timeline ul {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline li {
+  background: #fff;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  position: relative;
+  padding-left: 3rem;
+}
+
+.timeline li span {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #6e8c5f;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
