@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f8f4;
+  color: #3f4a3c;
+  line-height: 1.6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #4a6040;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.logo {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #c4ebb1;
+}
+
+.colecao {
+  background-color: #f9f8f4;
+  padding: 4rem 2rem;
+}
+
+.intro-colecao {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.intro-colecao h1 {
+  font-size: 2.5rem;
+  color: #4a6040;
+  margin-bottom: 1rem;
+}
+
+.intro-colecao p {
+  font-size: 1.2rem;
+  color: #5a5a5a;
+  text-align: center;
+}
+
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-items: center; /* Centraliza as colunas */
+}
+
+.produto {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  width: 100%;
+  max-width: 300px; /* Define um tamanho máximo para cada produto */
+}
+
+.produto img {
+  width: 100%;
+  height: 200px; /* Define uma altura fixa para as imagens */
+  object-fit: cover; /* Garante que as imagens se ajustem sem distorcer */
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.produto h2 {
+  font-size: 1.5rem;
+  color: #4a6040;
+  margin-bottom: 1rem;
+}
+
+.produto p {
+  font-size: 1rem;
+  color: #5a5a5a;
+  margin-bottom: 1.5rem;
+}
+
+.produto .btn-main {
+  background-color: #6e8c5f;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.produto .btn-main:hover {
+  background-color: #5a724d;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .produtos {
+    grid-template-columns: 1fr 1fr; /* Altera a grid para 2 colunas em telas pequenas */
+  }
+
+  .produto {
+    padding: 1rem;
+  }
+
+  .produto h2 {
+    font-size: 1.3rem;
+  }
+
+  .produto p {
+    font-size: 0.9rem;
+  }
+
+  .intro-colecao h1 {
+    font-size: 2rem;
+  }
+
+  .intro-colecao p {
+    font-size: 1rem;
+  }
+}
